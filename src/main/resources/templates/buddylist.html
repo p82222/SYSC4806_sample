@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab4</title>
+</head>
+<body>
+    <h1>Buddy List for AddressBook</h1>
+    <ul>
+        <li th:each="buddy : ${buddyList}">
+            Name: <span th:text="${buddy.name}"></span>, Phone: <span th:text="${buddy.phone}"></span>
+        </li>
+    </ul>
+
+</body>
+</html>
